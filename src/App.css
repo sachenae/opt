@@ -1,28 +1,31 @@
-.App {
-  text-align: center;
+
+.header-color {
+  background: #134E5E;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #71B280, #134E5E);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #71B280, #134E5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.landing_grid {
+  background: #C9D6FF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #E2E2E2, #C9D6FF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.profile-pic-img {
+  height: 250px;
+  padding-top: 5em;
 }
 
-.App-title {
-  font-size: 1.5em;
+.banner-text {
+  width: 75%;
+  margin: auto
 }
 
-.App-intro {
-  font-size: large;
-}
+.banner-text h1 {
+  font-size:66px;
+  color: cyan;
+  font-weight: bold;
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
 }

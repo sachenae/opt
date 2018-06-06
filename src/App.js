@@ -10,8 +10,8 @@ class App extends Component {
   render() {
     return (
       <div style={{height: '400px', position: 'relative'}}>
-    <Layout style={{background: 'url(http://www.getmdl.io/assets/demos/transparent.jpg) center / cover'}}>
-        <Header transparent title="Title" style={{color: 'white'}}>
+    <Layout>
+        <Header className="header-color" scroll title="Title" style={{color: 'white'}}>
             <Navigation>
                 <Link to="/resume">Resume</Link>
                 <Link to="/aboutme">About Me</Link>
