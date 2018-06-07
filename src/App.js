@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 class App extends Component {
   render() {
     return (
-      <div style={{height: '400px', position: 'relative'}}>
+      <div style={{height: '800px', position: 'relative'}}>
     <Layout>
         <Header className="header-color" scroll title="Title" style={{color: 'white'}}>
             <Navigation>
