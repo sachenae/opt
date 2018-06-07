@@ -48,3 +48,15 @@ background: linear-gradient(to bottom, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, 
   font-size: 4em;
  
 }
+
+.projects-grid{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.action-button{
+  display: flex;
+  justify-content: center;
+}
