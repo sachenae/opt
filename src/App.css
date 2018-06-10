@@ -73,3 +73,28 @@ background: linear-gradient(to bottom, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, 
 top: 0px;
   position: fixed;
 }
+.contact-list i {
+  font-size: 3rem;
+  padding-right: 4rem;
+  padding-left: 1rem;
+}
+
+.contact-cell h3 {
+ padding-left:2rem;
+}
+
+
+.contact-grid{
+  margin:0;
+  padding: 0;
+
+}
+.contact-cell{
+  height: 760px;
+  width: 100%;
+  margin: 0;
+  
+  justify-content: center;
+  background: rgb(216, 216, 216);
+  
+}
