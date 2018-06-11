@@ -1,15 +1,18 @@
 import React, { Component } from 'react';
 import { Grid, Cell, ListItem, ListItemContent } from 'react-mdl';
-import GoogleMap from '../components/google_map';
+import Map from './google_map';
 
 
 class Contact extends Component {
+
 
     render() {
         return (
             <div className="contact-body">
              <Grid className="contact-grid">
-             <Cell col={7}><GoogleMap  /></Cell>
+             <Cell col={7}>
+             <Map />
+             </Cell>
 
 
              <Cell col={5} className='contact-cell'>
