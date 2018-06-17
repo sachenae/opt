@@ -6,7 +6,7 @@ class Skills extends Component {
     render() {
         return (
             <div>
-               <Rater interactive={false} rating={3} />
+               <Rater interactive={false} rating={4} />
             </div>
         );
     }
