@@ -1,9 +1,22 @@
 import React, { Component } from 'react';
 import { Grid, Cell, ListItem, ListItemContent } from 'react-mdl';
-import { MyMapComponent } from './google_map';
+import InitialMap from './google_map';
 
 
 class Contact extends Component {
+
+    constructor(props){
+        super(props);
+
+        this.state = {
+            markers: [{
+                position: {
+                    lat: -34.397,
+                     lng: 150.644,
+                }
+            }]
+        }
+    }
 
 
     render() {
@@ -11,7 +24,16 @@ class Contact extends Component {
             <div className="contact-body">
              <Grid className="contact-grid">
              <Cell col={7}>
-             <MyMapComponent isMarkerShown />
+             <InitialMap
+             containerElement={
+                 <div style={{height: "100%"}} />
+             }
+             mapElement={
+                <div style={{height: "100%"}} />
+             }
+             markers={this.state.markers}
+
+             />
              </Cell>
 
 
