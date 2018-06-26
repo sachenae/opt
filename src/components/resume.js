@@ -9,7 +9,7 @@ class Resume extends Component {
             <div className="resume-portfolio">
                 <img src = {ResumeImg} alt=''/>
                     <div className= "download-button">
-                        <Button raised ripple>Download a copy</Button>
+                        <Button raised ripple href='http://i32.photobucket.com/albums/d22/sachenae/resume-portfolio_zpsuusvasin.png' download>Download a Copy</Button>
                     </div>
             </div>
         );
