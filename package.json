@@ -6,6 +6,7 @@
     "compression": "^1.7.2",
     "express": "^4.16.3",
     "morgan": "^1.9.0",
+    "path": "^0.12.7",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
     "react-google-maps": "^9.4.5",
@@ -17,7 +18,7 @@
     "react-star-ratings": "^2.2.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "node server.js",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
