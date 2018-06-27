@@ -26,8 +26,19 @@ class LandingPage extends Component {
                         className="profile-pic-img"
                         />
                         <hr/>
-                        <h1>Hei, I'm <b>Sachenae</b></h1>
-                       
+                        <h1> </h1>
+                        <section class="cd-intro">
+                            <h1 class="cd-headline letters type">
+                                <span>Hei, I'm <b>Sachenae, </b></span>
+                                <span class="cd-words-wrapper waiting">
+                                    <b class="is-visible">an emerging developer</b>
+                                    <b>an antecedent artist</b>
+                                    <b>an eloquent performer</b>
+                                    <b>a keen observer</b>
+                                    <b>a sagacious learner</b>
+                                </span>
+                            </h1>
+                        </section>
                         </div>
                         </Parallax>
 
