@@ -16,7 +16,7 @@ class LandingPage extends Component {
                     blur={0}
                     bgImage={Parallax1}
                     bgImageAlt="1"
-                    strength={200}
+                    strength={100}
                     >
                     <div className="landing-grid">
                         
@@ -35,16 +35,16 @@ class LandingPage extends Component {
                             blur={10}
                             bgImage={Parallax3}
                             bgImageAlt="2"
-                            strength={200}
+                            strength={100}
                             >
-                        <div className="banner-text" style={{ height: '400px' }}>
+                        <div className="banner-text" style={{ height: '700px' }}>
                         
                         <h3>Full Stack Dev | Metropolia Student | Open-Source Enthusiast</h3>
                         <h5>HTML/CSS | Bootstrap | JavaScript | React | React Native | NodeJS | Express | MongoDB</h5>
                         </div>
                         </Parallax>
                        
-                        <Parallax strength={200}>
+                        <Parallax strength={200} blur={1}>
                         
                         <div className="social-links" style={{ height: '300px' }}>
                         <a href="https://www.linkedin.com/in/sachin-shrestha-7a8292128/" rel="noopener noreferrer"  target="_blank">
@@ -60,7 +60,7 @@ class LandingPage extends Component {
                             <i className="fa fa-facebook" aria-hidden="true" />
                         </a>
                         </div>
-                            <Background className="custom-bg">
+                            <Background className="custom-bg" style={{ width: '100%' }}>
                                 <img src={Parallax2} alt="fill" />
                             </Background>
                             </Parallax>

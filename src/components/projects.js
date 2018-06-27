@@ -15,7 +15,7 @@ class Projects extends Component {;
             return(
                 
                             <div className="projects-grid">
-                                <Card shadow={5} style={{minWidth: '400px', margin:'50px'}}>
+                                <Card shadow={5} style={{minWidth: '300px', margin:'50px'}}>
                                     <CardTitle style={{color: '#000', height: '200px', 
                                     background:'url(http://i32.photobucket.com/albums/d22/sachenae/convoker_zpss6tgtrsq.png) center / cover' }}>
                                     Convoker - chat application

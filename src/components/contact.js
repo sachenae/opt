@@ -26,10 +26,10 @@ class Contact extends Component {
              <Cell col={7}>
              <InitialMap
              containerElement={
-                 <div style={{height: "100%"}} />
+                 <div style={{height: "1000px"}} />
              }
              mapElement={
-                <div style={{height: "100%"}} />
+                <div style={{height: "1000px"}} />
              }
              markers={this.state.markers}
 

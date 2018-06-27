@@ -1,70 +1,70 @@
-// const {createServer} = require('http');
-// const express = require('express');
-// const compression = require('compression');
-// const morgan = require('morgan');
-// const path = require('path');
-
-// const normalizePort = port => parseInt(port, 10);
-// const PORT = normalizePort(process.env.PORT|| 5000);
-
-// const app = express();
-// const dev = app.get('env') !== 'production';
-
-
-// if(!dev){
-//     app.disable('x-powered-by');
-//     app.use(compression());
-//     app.use(morgan('common'));
-
-//     app.use(express.static(path.resolve(__dirname, 'build')));
-
-//     app.get('*', (req,res) => {
-//         res.sendFile(path.resolve(__dirname, 'build', 'index.html'));
-//     });
-    
-// }
-
-// if(dev) {
-//     app.use(morgan('dev'));
-// }
-
-
-// const server = createServer(app);
-
-
-
-// server.listen(PORT, err => {
-//     if(err) throw err;
-//     console.log('Server started');
-// });
-
-
-
-
+const {createServer} = require('http');
 const express = require('express');
+const compression = require('compression');
+const morgan = require('morgan');
 const path = require('path');
+
+const normalizePort = port => parseInt(port, 10);
+const PORT = normalizePort(process.env.PORT|| 5000);
+
 const app = express();
+const dev = app.get('env') !== 'production';
 
 
+if(!dev){
+    app.disable('x-powered-by');
+    app.use(compression());
+    app.use(morgan('common'));
 
-if(process.env.NODE_ENV === 'production'){
-    
-    app.use(express.static(path.join(__dirname, '/build')));
+    app.use(express.static(path.resolve(__dirname, 'build')));
 
     app.get('*', (req,res) => {
-        res.sendFile(path.join(__dirname + '/build/index.html'));
+        res.sendFile(path.resolve(__dirname, 'build', 'index.html'));
     });
     
 }
 
+if(dev) {
+    app.use(morgan('dev'));
+}
 
-const PORT = process.env.PORT|| 5000;
+
+const server = createServer(app);
 
 
 
-
-app.listen(PORT,() => {
-    console.log('port', PORT);
+server.listen(PORT, err => {
+    if(err) throw err;
+    console.log('Server started');
 });
+
+
+
+
+// const express = require('express');
+// const path = require('path');
+// const app = express();
+
+
+
+// if(process.env.NODE_ENV === 'production'){
+    
+//     app.use(express.static(path.join(__dirname, '/build')));
+
+//     app.get('*', (req,res) => {
+//         res.sendFile(path.join(__dirname + '/build/index.html'));
+//     });
+    
+// }
+
+
+// const PORT = process.env.PORT|| 5000;
+
+
+
+
+// app.listen(PORT,() => {
+//     console.log('port', PORT);
+// });
 
 

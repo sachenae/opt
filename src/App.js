@@ -22,7 +22,7 @@ class App extends Component {
                 <Link to="/contact">Contact</Link>
             </Navigation>
         </Header> 
-        <Drawer title= "(:" style={{background: 'rgba(255, 0, 0, 0.1)'}} >
+        <Drawer title= "(:" style={{background: 'rgba(255, 0, 0, 0.1)', color: ' green'}} >
             <Navigation>
                 <Link to="/landingpage">Home</Link>
                 <Link to="/resume">Resume</Link>
